@@ -1,0 +1,40 @@
+#skills{
+
+	h4{
+		padding: 0;
+	}
+
+	p{
+		margin-bottom: 6px;
+	}
+
+
+	.web_skills{
+		@include sm_phone{
+		margin-bottom: 40px;
+		}
+	}
+
+	.km_spacing{
+		@include tablet{
+		margin-top: 40px;
+		}
+
+	}
+
+	.print_skills{
+		@include sm_phone{
+		margin-bottom: 50px;
+		}
+	}
+
+	.print_skills{
+		@include lg_phone{
+		margin-bottom: 50px;
+		}
+	}
+
+
+}
+
+

@@ -1,0 +1,51 @@
+.wrapper{
+  border: 2px solid red;
+}
+
+#image{
+
+	background-color: $primary-color;
+	padding-top: 80px;
+	padding-bottom: 80px;
+
+    @include sm_phone{
+    padding-top: 50px;
+    padding-bottom: 50px;
+      }
+
+	h3{
+	color: #000;
+	}
+
+	.logo{
+		height: 150px;
+		line-height: 150px;
+		text-align: center;
+	}
+
+  .graphic{
+    text-align: left;
+  }
+
+  .black_text{
+
+    line-height: 1.45em;
+
+  		@include sm_phone{
+			padding-left: 18px;
+			padding-top: 20px;
+			padding-bottom: 20px;
+	  }
+  }
+
+  .graphic img {
+  	width: 100%;
+  	padding-left: 20px;
+  }
+
+}
+
+
+
+
+

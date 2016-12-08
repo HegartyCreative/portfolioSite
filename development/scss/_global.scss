@@ -1,0 +1,67 @@
+
+/**
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    contenteditable attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that are clearfixed.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+.cf:before,
+.cf:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.cf:after {
+    clear: both;
+}
+
+.cf {
+    *zoom: 1;
+}
+
+body{
+	font-family: 'Lato', sans-serif;
+	background-color: #000;
+}
+
+// .wrapper{
+// 	top: 0;
+//     margin: 0 auto;
+// }
+
+#about,
+#work,
+#clients,
+#skills,
+#contact,
+#image{
+	padding: 40px 20px;
+}
+
+.about-section, .myWork-section, .client-section, .attributes-section, .skills-section{
+        @include sm_phone{
+        padding: 0px;
+        margin: 0px;
+      }
+}
+
+#about, #clients, #attributes, #clients  {
+        @include sm_phone{
+        padding: 0px;
+        margin: 0px;
+      }
+}
+
+.img-space{
+        @include sm_phone{
+        padding: 0px;
+        margin: 0px;
+      }
+}
+
+.spacing{
+	margin-top: 50px;
+}

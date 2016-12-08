@@ -1,0 +1,56 @@
+#attributes{
+	background-color: $primary-color;
+	padding: 40px 0px 40px 0px;
+
+	p{
+		color: #000;
+		text-align: center;
+		font-size: 1.3em;
+		font-family: 'Orbitron', Tahoma, sans-serif;
+		font-weight: 500;
+		letter-spacing: 0.1em;
+
+		@include tablet{
+			font-size: 1.1em;
+		}
+
+		@include sm_phone{
+			font-size: 1.1em;
+		}
+	}
+
+	.top_attr{
+		margin-bottom: 50px;
+	}
+
+
+	.attr_spacing{
+
+		text-align: center;
+
+			@include lg_phone{
+			padding-bottom: 70px;
+		}
+
+			@include sm_phone{
+			padding-bottom: 40px;
+		}
+	}
+
+	.attr_last{
+
+			@include sm_phone{
+			padding-bottom: 00px;
+		}
+	}
+
+		img{
+			width: 15%;
+		}
+
+	}
+
+
+
+
+

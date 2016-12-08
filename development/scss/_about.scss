@@ -1,0 +1,91 @@
+
+#about a{
+	font-weight: bold;
+	text-decoration: underline;
+	color: #ffffff;
+}
+
+#about {
+  padding-top: 10px;
+
+    @include sm-phone{
+    padding-top: 20px;
+    }
+
+	    @include tablet{
+	   .test{
+		  margin-bottom: 40px;
+	 }
+  }
+
+
+blockquote{
+	color: $primary-color;
+	margin-right: 20px;
+	font-size: 18px;
+  margin-top: 0;
+
+    @include sm-phone{
+	margin-left: 15px;
+	margin-right: 10px;
+	margin-top: 30px;
+	margin-bottom: 30px;
+  }
+
+}
+
+blockquote::before {
+  content: "\201C";
+  font-size: 90px;
+  font-weight: bold;
+  color: $primary-color;
+  position: absolute;
+  left: 30px;
+  top: 24px;
+  font-family: 'Open Sans', Tahoma, sans-serif;
+
+    @include sm-phone{
+    font-size: 70px;
+    left: -15px;
+    top: 22px;
+    }
+
+    @include lg-phone{
+    left: 0px;
+    }
+
+    @include tablet {
+    left: 5px;
+    }
+}
+
+blockquote::after {
+  /*Reset to make sure*/
+  content: "";
+	color: $primary-color;}
+
+blockquote span{
+	font-weight: 700;
+		color: $primary-color;
+}
+
+blockquote .company{
+	font-size: 1em;
+	color: $primary-color;
+}
+
+.quote{
+	padding-top: 5px;
+	color: $primary-color;
+
+}
+
+.title{
+	font-size: 1.1em;
+}
+
+
+
+}
+
+

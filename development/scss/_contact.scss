@@ -1,0 +1,66 @@
+#contact{
+
+	background-color: #000;
+	text-align: center;
+
+	img{
+		padding-bottom: 30px;
+		width: 7%;
+	}
+
+
+	h3{
+		color: $primary-color;
+		padding: 0;
+	}
+
+	p{
+		color: $primary-color;
+	}
+
+	p.tel{
+		font-size: 1.7em;
+		font-weight: 700;
+		letter-spacing: 0.03em;
+		padding: 15px 0px;
+		color: $primary-color;
+	}
+
+	p.copy{
+		font-size: 0.8em;
+	}
+
+	.fa-comments{
+		font-size: 3em;
+		color: $primary-color;
+	}
+
+
+	.rrssb-buttons li.rrssb-email a,
+	.rrssb-buttons li.rrssb-linkedin a,
+	.rrssb-buttons li.rrssb-github a,
+	.rrssb-buttons li.rrssb-twitter a{
+		background-color: #000;
+		border: 1px solid $primary-color;
+	}
+
+	.rrssb-buttons li.rrssb-email a:hover,
+	.rrssb-buttons li.rrssb-linkedin a:hover,
+	.rrssb-buttons li.rrssb-github a:hover,
+	.rrssb-buttons li.rrssb-twitter a:hover{
+		background-color: #4e4010;
+	}
+	.social_icons{
+		width: 50%;
+		margin: 20px auto 30px auto;
+
+		@include sm_phone{
+		width: 100%;
+		margin: 20px auto 30px auto;
+
+	  }
+	}
+}
+
+
+

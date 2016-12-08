@@ -1,0 +1,557 @@
+
+
+#clients{
+
+	background-color: $primary-color;
+
+	h3{
+	color: #000;
+	}
+
+  p{
+    color: #000;
+    padding-left: 20px;
+
+      @include sm_phone{
+      padding-left: 0px;
+    }
+
+  }
+
+  img{
+    max-width: 100%;
+  }
+
+	.logo{
+		height: 150px;
+		line-height: 150px;
+		text-align: center;
+
+    @include sm_phone{
+    height: 80px;
+    line-height: 80px;
+    }
+
+	}
+
+  @include lg_desktop{
+
+  .logo1 img{
+    max-width: 70%;
+  }
+
+  .logo4 img{
+    max-width: 80%;
+  }
+
+  .logo5 img{
+    max-width: 50%;
+  }
+
+  .logo7 img{
+    max-width: 90%;
+  }
+
+  .logo8 img{
+    max-width: 70%;
+  }
+
+ .logo9 img{
+    max-width: 45%;
+  }
+
+  .logo12 img{
+    max-width: 45%;
+  }
+
+  .logo15 img{
+    max-width: 70%;
+  }
+
+  .logo16 img{
+    max-width: 80%;
+  }
+
+   .logo17 img{
+    max-width: 40%;
+  }
+
+   .logo21 img{
+    max-width: 45%;
+  }
+
+   .logo22 img{
+    max-width: 80%;
+  }
+
+  .logo23 img{
+    max-width: 80%;
+  }
+
+  }
+
+  @include desktop{
+
+  .logo1 img{
+    max-width: 50%;
+  }
+
+  .logo2 img{
+    max-width: 80%;
+  }
+
+  .logo3 img{
+    max-width: 80%;
+  }
+
+  .logo4 img{
+    max-width: 60%;
+  }
+
+  .logo5 img{
+    max-width: 40%;
+  }
+
+  .logo6 img{
+    max-width: 70%;
+  }
+
+  .logo7 img{
+    max-width: 70%;
+  }
+
+  .logo8 img{
+    max-width: 50%;
+  }
+
+  .logo9 img{
+    max-width: 35%;
+  }
+
+  .logo10 img{
+    max-width: 90%;
+  }
+
+  .logo11 img{
+    max-width: 80%;
+  }
+
+  .logo12 img{
+    max-width: 40%;
+  }
+
+  .logo13 img{
+    max-width: 70%;
+  }
+
+  .logo14 img{
+    max-width: 90%;
+  }
+
+  .logo15 img{
+    max-width: 50%;
+  }
+
+  .logo16 img{
+    max-width: 55%;
+  }
+
+  .logo17 img{
+    max-width: 30%;
+  }
+
+  .logo18 img{
+    max-width: 80%;
+  }
+
+  .logo19 img{
+    max-width: 80%;
+  }
+
+  .logo20 img{
+    max-width: 90%;
+  }
+
+  .logo21 img{
+    max-width: 30%;
+  }
+
+  .logo22 img{
+    max-width: 70%;
+  }
+
+  .logo23 img{
+    max-width: 60%;
+  }
+
+  .logo24 img{
+    max-width: 80%;
+  }
+
+  }
+
+    @include tablet{
+
+  .logo1 img{
+    max-width: 50%;
+  }
+
+  .logo2 img{
+    max-width: 80%;
+  }
+
+  .logo3 img{
+    max-width: 80%;
+  }
+
+  .logo4 img{
+    max-width: 60%;
+  }
+
+  .logo5 img{
+    max-width: 40%;
+  }
+
+  .logo6 img{
+    max-width: 70%;
+  }
+
+  .logo7 img{
+    max-width: 70%;
+  }
+
+  .logo8 img{
+    max-width: 50%;
+  }
+
+  .logo9 img{
+    max-width: 35%;
+  }
+
+  .logo10 img{
+    max-width: 90%;
+  }
+
+  .logo11 img{
+    max-width: 80%;
+  }
+
+  .logo12 img{
+    max-width: 40%;
+  }
+
+  .logo13 img{
+    max-width: 70%;
+  }
+
+  .logo14 img{
+    max-width: 90%;
+  }
+
+  .logo15 img{
+    max-width: 50%;
+  }
+
+  .logo16 img{
+    max-width: 55%;
+  }
+
+  .logo17 img{
+    max-width: 30%;
+  }
+
+  .logo18 img{
+    max-width: 80%;
+  }
+
+  .logo19 img{
+    max-width: 80%;
+  }
+
+  .logo20 img{
+    max-width: 90%;
+  }
+
+  .logo21 img{
+    max-width: 30%;
+  }
+
+  .logo22 img{
+    max-width: 60%;
+  }
+
+  .logo23 img{
+    max-width: 60%;
+  }
+
+  .logo24 img{
+    max-width: 80%;
+  }
+
+  }
+
+
+
+@include lg-phone{
+
+  .logo1 img{
+    max-width: 50%;
+  }
+
+  .logo2 img{
+    max-width: 80%;
+  }
+
+  .logo3 img{
+    max-width: 80%;
+  }
+
+  .logo4 img{
+    max-width: 60%;
+  }
+
+  .logo5 img{
+    max-width: 40%;
+  }
+
+  .logo6 img{
+    max-width: 70%;
+  }
+
+  .logo7 img{
+    max-width: 70%;
+  }
+
+  .logo8 img{
+    max-width: 50%;
+  }
+
+  .logo9 img{
+    max-width: 35%;
+  }
+
+  .logo10 img{
+    max-width: 90%;
+  }
+
+  .logo11 img{
+    max-width: 80%;
+  }
+
+  .logo12 img{
+    max-width: 40%;
+  }
+
+  .logo13 img{
+    max-width: 70%;
+  }
+
+  .logo14 img{
+    max-width: 90%;
+  }
+
+  .logo15 img{
+    max-width: 50%;
+  }
+
+  .logo16 img{
+    max-width: 55%;
+  }
+
+  .logo17 img{
+    max-width: 30%;
+  }
+
+  .logo18 img{
+    max-width: 80%;
+  }
+
+  .logo19 img{
+    max-width: 80%;
+  }
+
+  .logo20 img{
+    max-width: 90%;
+  }
+
+  .logo21 img{
+    max-width: 30%;
+  }
+
+  .logo22 img{
+    max-width: 70%;
+  }
+
+  .logo23 img{
+    max-width: 60%;
+  }
+
+  .logo24 img{
+    max-width: 80%;
+  }
+
+  }
+
+
+
+@include sm-phone{
+
+  .logo1 img{
+    max-width: 50%;
+  }
+
+  .logo2 img{
+    max-width: 90%;
+  }
+
+  .logo3 img{
+    max-width: 100%;
+  }
+
+  .logo4 img{
+    max-width: 70%;
+  }
+
+  .logo5 img{
+    max-width: 40%;
+  }
+
+  .logo6 img{
+    max-width: 80%;
+  }
+
+  .logo7 img{
+    max-width: 90%;
+  }
+
+  .logo8 img{
+    max-width: 60%;
+  }
+
+  .logo9 img{
+    max-width: 40%;
+  }
+
+  .logo10 img{
+    max-width: 90%;
+  }
+
+  .logo11 img{
+    max-width: 80%;
+  }
+
+  .logo12 img{
+    max-width: 40%;
+  }
+
+  .logo13 img{
+    max-width: 90%;
+  }
+
+  .logo14 img{
+    max-width: 100%;
+  }
+
+  .logo15 img{
+    max-width: 50%;
+  }
+
+  .logo16 img{
+    max-width: 70%;
+  }
+
+  .logo17 img{
+    max-width: 35%;
+  }
+
+  .logo18 img{
+    max-width: 100%;
+  }
+
+  .logo19 img{
+    max-width: 100%;
+  }
+
+  .logo20 img{
+    max-width: 100%;
+  }
+
+  .logo21 img{
+    max-width: 30%;
+  }
+
+  .logo22 img{
+    max-width: 90%;
+  }
+
+  .logo23 img{
+    max-width: 70%;
+  }
+
+  .logo24 img{
+    max-width: 80%;
+  }
+
+  }
+}
+
+
+blockquote {
+  display: block;
+  padding: 5px 10px 15px 90px;
+  margin: 10px 0 10px;
+  position: relative;
+  border: none;
+  letter-spacing: 0.02rem;
+  font-size: 1.2rem;
+  line-height: 1.6rem;
+  color: #000;
+
+    @include sm-phone{
+    padding: 5px 0px 10px 30px;
+    font-size: 1.1rem;
+    line-height: 1.5rem;
+    margin: 10px 0px;
+    }
+
+
+}
+
+blockquote::before {
+  content: "\201C";
+  font-size: 110px;
+  font-weight: bold;
+  color: #000;
+  position: absolute;
+  left: 10px;
+  top: 36px;
+  font-family: 'Open Sans', Tahoma, sans-serif;
+
+    @include sm-phone{
+    font-size: 70px;
+    left: -15px;
+    top: 22px;
+  }
+
+   }
+
+blockquote::after {
+  /*Reset to make sure*/
+  content: ""; }
+
+blockquote span{
+	font-weight: 700;
+}
+
+blockquote .company{
+	font-size: 0.8em;
+	color: #000;
+}
+
+.quote{
+	padding-top: 30px;
+}
+
+
+
+

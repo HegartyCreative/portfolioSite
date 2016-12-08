@@ -1,0 +1,51 @@
+.navbar{
+	z-index: 500;
+}
+
+.navbar-default{
+	background: $primary-color;
+	border-bottom: 2px solid #000;
+}
+
+.top_image{
+	width: 100%;
+	position: relative;
+}
+
+.navbar-default .navbar-nav>li>a,{
+	color: #000;
+}
+
+
+.navbar-default .navbar-brand{
+	color: #000;
+	text-transform: uppercase;
+	letter-spacing: 0.05em;
+	font-size: 1em;
+}
+
+
+.navbar-default .navbar-nav>li>a:hover,{
+	color: #fff;
+}
+
+.navbar-default .navbar-brand:hover,
+.navbar-default .navbar-brand:focus {
+     color: white;
+}
+
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover{
+	background-color: transparent;
+	color: #000;
+}
+
+
+// .line{
+//     display:block;
+//     border: 1px solid $primary-color;
+//     margin: 0 20%;
+// }
+
+
+
+

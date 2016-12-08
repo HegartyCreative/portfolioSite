@@ -1,0 +1,14 @@
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 54.17 44.86">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #1d1d1b;
+      }
+    </style>
+  </defs>
+  <title>tick</title>
+  <g>
+    <polygon class="cls-1" points="43.54 1.17 21.32 27.86 9.22 18.06 1.14 27.8 22.17 43.78 53.06 9.93 43.54 1.17"/>
+    <path class="cls-1" d="M22.27,44.86,0,27.94l9.11-11L21.2,26.73,43.45,0,54.17,9.88Zm-20-17.18,19.78,15L51.94,10,43.63,2.34,21.45,29,9.34,19.17Z"/>
+  </g>
+</svg>

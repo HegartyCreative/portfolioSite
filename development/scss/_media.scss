@@ -1,0 +1,56 @@
+
+
+@mixin sm_phone{
+	@media only screen and (max-width: 480px){
+		@content;
+	}
+}
+
+
+@mixin lg_phone{
+	@media only screen and (min-width: 481px) and (max-width: 768px){
+		@content;
+	}
+}
+
+
+@mixin tablet{
+	@media only screen and (min-width: 769px) and (max-width: 992px){
+		@content;
+	}
+}
+
+
+@mixin desktop{
+	@media only screen and (min-width: 992px) and (max-width: 1200px){
+		@content;
+	}
+}
+
+
+@mixin lg_desktop{
+	@media only screen and (min-width: 1201px) {
+		@content;
+	}
+}
+/*	@include sm_phone{
+	background: green;
+	}
+
+	@include lg_phone{
+	background: red;
+	}
+
+
+	@include tablet{
+	background: pink;
+	}
+
+	@include desktop{
+	background: blue;
+	}
+
+	@include lg_desktop{
+	background: orange;
+	}*/
+

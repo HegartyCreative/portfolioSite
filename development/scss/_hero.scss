@@ -1,0 +1,70 @@
+.horiz_line{
+
+    @include sm_phone{
+     display: none;
+      }
+
+    @include lg_phone{
+     display: none;
+      }
+
+    @include tablet{
+     display: none;
+      }
+
+    .line_holder{
+        padding: 0;
+        margin: 0;
+    }
+
+    .line_right{
+        padding-right: 460px;
+    }
+
+    .line_left{
+        padding-left: 460px;
+    }
+
+    hr{
+        border: 1px solid $primary-color;
+    }
+
+}
+
+.hero_image{
+    margin-bottom: 40px;
+}
+
+
+.main_image{
+      position: relative;
+}
+
+.main_image img{
+  width: 100%;
+}
+
+.top_text{
+  z-index: 100;
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  top: 200px;
+
+  @include desktop{
+  top: 125px;
+  }
+
+  @include tablet{
+  top: 110px;
+  }
+
+  @include lg_phone{
+  top: 70px;
+  }
+
+  @include sm_phone{
+  top: 50px;
+  }
+
+}

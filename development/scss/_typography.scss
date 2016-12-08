@@ -1,0 +1,172 @@
+body{
+	font-size: 18px;
+	font-family: 'Open Sans', sans-serif;
+}
+
+.section p{
+	color: #fff;
+}
+
+h1, h2, h3, h4{
+	font-family: 'Orbitron', Tahoma, sans-serif;
+	color: $primary-color;
+	letter-spacing: 0.05em;
+	font-weight: 700;
+}
+
+h1{
+	font-size: 5em;
+	line-height: 45px;
+	color: #fff;
+	text-shadow: 2px 2px #000;
+	margin-bottom: 40px;
+
+	@include desktop{
+	font-size: 3.7em;
+	}
+
+	@include tablet{
+	font-size: 3em;
+	margin-bottom: 20px;
+	}
+
+	@include lg_phone{
+	font-size: 2.2em;
+    margin-top: 40px;
+	margin-bottom: 0px;
+	}
+
+	@include sm_phone{
+	font-size: 1.6em;
+    margin-top: 30px;
+	margin-bottom: 15px;
+	}
+
+}
+
+h2{
+	font-size: 2.7em;
+	line-height: 60px;
+	padding-top: 60px;
+	text-shadow: 2px 2px #000;
+
+	@include desktop{
+	font-size: 2.4em;
+	}
+
+	@include tablet{
+	font-size: 2em;
+	}
+
+	@include lg_phone{
+	font-size: 1.5em;
+	line-height: 1.3em;
+	padding-top: 35px;
+	}
+
+	@include sm_phone{
+	font-size: 1.1em;
+	line-height: 1.3em;
+	padding-top: 0px;
+	}
+}
+
+h3{
+	font-size: 2em;
+	line-height: 40px;
+	padding-left: 10px;
+	padding-bottom: 20px;
+
+	@include tablet{
+	font-size: 1.8em;
+	}
+
+	@include lg_phone{
+	font-size: 1.6em;
+	}
+
+	@include sm_phone{
+	font-size: 1.4em;
+	padding-top: 20px;
+	}
+
+}
+
+h4{
+	font-size: 1.5em;
+	line-height: 60px;
+	padding-left: 20px;
+	padding-top: 20px;
+	padding-bottom: 10px;
+
+	@include sm_phone{
+	font-size: 1.2em;
+	}
+}
+
+
+
+p.keyMessage {
+	color: $primary-color;
+	border-left: 1px solid $primary-color;
+	padding: 0px 30px;
+}
+
+.keyMessage_inverse {
+	color: #000;
+	border-left: 1px solid #000;
+	padding: 0px 30px;
+}
+
+p.black_text{
+	color: #000;
+}
+
+
+#work h3{
+	@include sm_phone{
+	margin: 0;
+	padding: 0;
+	}
+}
+
+
+#work h4{
+	@include sm_phone{
+	margin: 0;
+	padding: 0;
+	}
+}
+
+#clients h3{
+	@include sm_phone{
+	margin-left: 0;
+	padding-left: 0;
+	padding-top: 40px;
+	}
+}
+
+#skills h3{
+	@include sm_phone{
+	margin-left: 0;
+	padding-left: 0;
+	padding: 0px;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
