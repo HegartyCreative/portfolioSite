@@ -1,105 +1,300 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xmlns="http://www.w3.org/1999/xhtml">
+<!DOCTYPE html>
+<html lang="en">
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<title>Agora Health Email Design</title>
+<title>Responsive Email Design</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+<style type="text/css">
 
+  /* CLIENT-SPECIFIC STYLES ------------------- */
 
+  #outlook a {
+    padding: 0; /* Force Outlook to provide a "view in browser" message */
+  }
 
+  .ReadMsgBody {
+    width: 100%; /* Force Hotmail to display emails at full width */
+  }
+
+  .ExternalClass {
+    width:100%; /* Force Hotmail to display emails at full width */
+  }
+
+  .ExternalClass, .ExternalClass p, .ExternalClass span, .ExternalClass font, .ExternalClass td, .ExternalClass div {
+    line-height: 100%; /* Force Hotmail to display normal line spacing */
+  }
+
+  body, table, td, a { /* Prevent WebKit and Windows mobile changing default text sizes */
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+  }
+
+  table, td { /* Remove spacing between tables in Outlook 2007 and up */
+    mso-table-lspace: 0pt;
+    mso-table-rspace:0pt;
+  }
+
+  img { /* Allow smoother rendering of resized image in Internet Explorer */
+    -ms-interpolation-mode: bicubic;
+  }
+
+  /* RESET STYLES --------------------------- */
+
+  body {
+    height: 100% !important;
+    margin: 0;
+    padding: 0;
+    width: 100% !important;
+  }
+
+  img {
+    border: 0;
+    height: auto;
+    line-height: 100%;
+    outline: none;
+    text-decoration: none;
+  }
+
+  table {
+    border-collapse: collapse !important;
+  }
+
+  /* iOS BLUE LINKS */
+
+  .apple-links a {
+    color: #999999;
+    text-decoration: none;
+  }
+
+  /* MOBILE STYLES ------------------------ */
+
+  @media screen and (max-width: 600px) {
+
+    td[class="logo"] img {
+      margin: 0 auto !important;
+    }
+
+    table[class="wrapper"] {
+      width: 100% !important;
+    }
+
+    td[class="mobile-image-pad"] {
+      padding: 0 10px 0 10px !important;
+    }
+
+    td[class="mobile-title-pad"] {
+      padding: 30px 10px 0px 10px !important;
+    }
+
+    td[class="mobile-text-pad"] {
+      padding: 10px 10px 10px 10px !important;
+    }
+
+    td[class="mobile-column-right"] {
+      padding-top: 20px !important;
+    }
+
+    img[class="fluid-image"] {
+      width: 100% !important;
+      height: auto !important;
+    }
+
+    td[class="hide"] {
+      display: none !important;
+    }
+
+    td[class="mobile-button"] {
+      padding: 12px 60px 12px 60px !important;
+    }
+
+    td[class="mobile-button"] a {
+      font-size: 24px !important;
+    }
+  }
+
+</style>
 </head>
+<body style="margin: 0; padding: 0;">
 
-<body>
-    <table width="100%" cellpadding="10" cellspacing="0">
-
+<!-- CONTAINER TABLE -->
+<table border="0" cellpadding="0" cellspacing="0" width="100%" style="table-layout: fixed;">
+  <tr>
+      <td bgcolor="#FFD034">
+          <p align="center" style="color: #ffffff; font-size: 16px; font-family: 'helvetica', Arial, Verdana, sans-serif;"><a href="index.html#email" style="color: #000;"><span style="color: #000;">SEAN HEGARTY CREATIVE LIMITED</span></a></p>
+      </td>
+  </tr>
+  <tr>
+    <td align="center" bgcolor="#008080" style="padding: 20px 0 20px 0;">
+      <!-- HIDDEN PREHEADER -->
+      <div style="display: none; font-size: 1px; color:#333333; line-height: 1px; font-family: Arial, sans-serif; max-height: 0px; max-width: 0px; opacity: 0; overflow: hidden; mso-hide: all;">
+        This won't be shown in the design, but will be visible in the inbox preview.
+      </div>
+      <!-- WRAPPER TABLE -->
+      <table border="0" cellpadding="0" cellspacing="0" width="600" class="wrapper">
+        <!-- LOGO/PREHEADER TEXT -->
         <tr>
-            <td bgcolor="#FFD034">
-                <p align="center" style="color: #ffffff; font-size: 16px; font-family: 'helvetica', Arial, Verdana, sans-serif;"><a href="index.html#email" style="color: #000;"><span style="color: #000;">SEAN HEGARTY CREATIVE LIMITED</span></a></p>
-            </td>
+          <td>
+            <table border="0" cellpadding="0" cellspacing="0" width="100%">
+              <tr>
+                <td align="left" style="color: #ffffff; font-family: Arial, sans-serif; font-weight: normal; font-size: 14px; line-height: 18px;">
+                  AGORA HEALTH
+                </td>
+                <td align="right" class="hide" style="color: #ffffff; font-family: Arial, sans-serif; font-weight: normal; font-size: 14px; line-height: 18px;">
+                  Our guide to healthy living
+                </td>
+              </tr>
+            </table>
+          </td>
         </tr>
+      </table>
+    </td>
+  </tr>
+</table>
 
+<!-- CONTAINER TABLE -->
+<table border="0" cellpadding="0" cellspacing="0" width="100%" style="table-layout: fixed;">
+  <tr>
+    <td align="center"  bgcolor="#333333" style="padding: 20px 0 20px 0;">
+      <!-- WRAPPER TABLE -->
+      <table border="0" cellpadding="0" cellspacing="0" width="600" class="wrapper">
         <tr>
-            <td bgcolor="#363636">
-                <p align="center" style="color: #ffffff; font-size: 14px; font-family: 'Trebuchet MS', Arial, Verdana, sans-serif;">You are receiving this email because you subscribed to our newsletter.<br /><a style="color: #ffffff;"><span style="color: #ffffff;">Click here to unsubscribe</span></a></p>
-            </td>
-        </tr>
-
-        <tr>
-            <td bgcolor="#2360a6">
-                <table width="480" align="center" cellpadding="0">
+          <td>
+            <table border="0" cellpadding="0" cellspacing="0"  width="100%">
+              <tr>
+                <td class="mobile-image-pad">
+                  <img src="http://res.cloudinary.com/ldeddydma/image/upload/v1482097496/one_tpc7fa.jpg" alt="The team to keep you healthy" width="600" height="236" border="0" style="display: block; padding: 0; color: #ffffff; font-family: Arial, sans-serif; font-weight: bold; font-size: 24px; background-color: #87cefa; -webkit-border-radius: 4px; border-radius: 4px;" class="fluid-image" />
+                </td>
+              </tr>
+              <tr>
+                <td align="center" style="padding: 20px 0 10px 0; color: #aaaaaa; font-family: Arial, sans-serif; font-weight: bold; font-size: 32px; line-height: 36px;" class="mobile-title-pad">
+                  Main heading
+                </td>
+              </tr>
+              <tr>
+                <td align="center" style="padding: 10px 0 10px 0; color: #aaaaaa; font-family: Arial, sans-serif; font-weight: normal; font-size: 18px; line-height: 22px;" class="mobile-text-pad">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio enim, molestias facere. Neque quis saepe amet culpa, accusamus facere totam cupiditate ad. Eligendi animi iste veritatis, dolorum exercitationem unde numquam!.
+                </td>
+              </tr>
+              <tr>
+                <td align="center" style="padding: 10px 0 10px 0; color: #aaaaaa; font-family: Arial, sans-serif; font-weight: normal; font-size: 18px; line-height: 22px;" class="mobile-text-pad">
+                  Lorem ipsum dolor sit amet <a href="#" style="color: #008080; text-decoration: none;">link</a> elit <a href="#" style="color: #008080; text-decoration: none;">link</a> molestias facere. Neque quis saepe amet culpa, accusamus facere totam cupiditate ad. Eligendi animi iste veritatis, dolorum.
+                </td>
+              </tr>
+              <tr>
+                <td align="center" style="padding: 10px 0 10px 0;">
+                  <!-- TABLE-BASED BUTTON -->
+                  <table border="0" cellpadding="0" cellspacing="0"  width="100%">
                     <tr>
-                        <td bgcolor="#ffffff">
-                            <img src="http://res.cloudinary.com/ldeddydma/image/upload/v1481196396/header_ppwzvi.jpg" width="480" alt="Agora Health" />
-
-                            <table width="100%" cellpadding="10" cellspacing="0">
-                                <tr>
-                                    <td bgcolor="#ffffff">
-                                        <h1 align="center" style="color: #2360a6; font-size: 24px; font-family: 'Trebuchet MS', Arial, Verdana, sans-serif;">Agora Health</h1>
-                                        <p style="color: #535151; font-size: 14px; line-height: 19px; font-family: 'Trebuchet MS', Arial, Verdana, sans-serif;">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in repreulpa qui officia deserunt mollit anim id est laborum.</p>
-                                    </td>
-                                </tr>
-
-                            </table>
-
-                            <table width="100%" cellpadding="0" cellspacing="0">
-                                <tr>
-                                    <td colspan="2" bgcolor="#e7e7e7">
-                                        <p style="font-size: 12px; color: #535151; padding-left: 10px; padding-right: 10px; line-height: 16px; font-family: 'Trebuchet MS', Arial, Verdana, sans-serif;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae necessitatibus deleniti, provident blanditiis maxime volupta.</p>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td width="214"><img src="http://res.cloudinary.com/ldeddydma/image/upload/v1481203628/middle_xmvkvu.jpg" style="display: block;" /></td>
-                                    <td width="266" bgcolor="#9ba0a6">
-                                        <p style="color: #ffffff; font-size: 14px; padding-left: 10px; padding-right: 10px; font-family: 'Trebuchet MS', Arial, Verdana, sans-serif;">Sub-heading</p>
-                                        <p style="color: #ffffff; font-size: 12px; padding-left: 10px; padding-right: 10px; line-height: 16px; font-family: 'Trebuchet MS', Arial, Verdana, sans-serif;">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eirum. sum dolor sit amet, consectetu sum dolor sit amet, consectetur adipisicing elit, sed do eirum. sum dolor sit amet, consect amet. </p>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td width="214" bgcolor="#9ba0a6">
-                                        <p style="color: #ffffff; font-size: 14px; padding-left: 10px; padding-right: 10px; font-family: 'Trebuchet MS', Arial, Verdana, sans-serif;">Sub-heading</p>
-                                        <p style="color: #ffffff; font-size: 12px; padding-left: 10px; padding-right: 10px; line-height: 16px; font-family: 'Trebuchet MS', Arial, Verdana, sans-serif;">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eirum. ctetur adipisicing elit, sed do eirum. sum dolor sit amet, conseet, consectetur </p>
-                                    </td>
-                                    <td width="266"><img src="http://res.cloudinary.com/ldeddydma/image/upload/v1481205240/middle2_lrkgud.jpg" style="display: block;" /></td>
-                                </tr>
-                                <tr>
-                                    <td width="214"><img src="http://res.cloudinary.com/ldeddydma/image/upload/v1481205519/middle3_bh4nrl.jpg" style="display: block;" /></td>
-                                    <td width="266" bgcolor="#9ba0a6">
-                                        <p style="color: #ffffff; font-size: 14px; padding-left: 10px; padding-right: 10px; font-family: 'Trebuchet MS', Arial, Verdana, sans-serif;">Sub-heading</p>
-                                        <p style="color: #ffffff; font-size: 12px; padding-left: 10px; padding-right: 10px; line-height: 16px; font-family: 'Trebuchet MS', Arial, Verdana, sans-serif;">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eirum. sum dolor sit amet, consectetu sum dolor sit amet, consectetur adipisicing elit, sed do eirum. sum dolor sit amet, consecte onsectetu sum dolor sit amet, consectetur </p>
-                                    </td>
-                                </tr>
-                            </table>
-
-                          <table width="100%" cellpadding="10" cellspacing="0">
-                                <tr>
-                                    <td bgcolor="#ffffff">
-                                        <p style="color: #535151; font-size: 14px; line-height: 19px; font-family: 'Trebuchet MS', Arial, Verdana, sans-serif;">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in repreulpa qui officia deserunt mollit anim id est laborum.</p>
-                                    </td>
-                                </tr>
-
-                            </table>
-
-
-                            <table width="480" align="center" cellpadding="0" cellspacing="0">
-                                <tr>
-                                    <td>
-                            <img src="http://res.cloudinary.com/ldeddydma/image/upload/v1481209423/footer_yovqlg.jpg" width="480" style="display: block;" />
-
-
-                        </td>
+                      <td align="center" style="padding: 20px 0 0 0;">
+                        <table border="0" cellspacing="0" cellpadding="0">
+                          <tr>
+                            <td bgcolor="#008080" style="padding: 12px 18px 12px 18px; -webkit-border-radius:3px; border-radius:3px" align="center" class="mobile-button"><a href="http://litmus.com" style="font-size: 16px; font-family: Arial, sans-serif; font-weight: normal; color: #ffffff; text-decoration: none;">Learn more &rarr;</a></td>
+                          </tr>
+                        </table>
+                      </td>
                     </tr>
-                    <tr>
-                        <td bgcolor="#2360a6">
-                            <p align="center" style="color: #ffffff; font-size: 12px; font-family: 'Trebuchet MS', Arial, Verdana, sans-serif;">You are receiving this email because you’re subscribed to our newsletter<br />
-                                <a href="#d41d8cd98f00b204e9800998ecf8427e" style="color: #ffffff;"><span style="color: #ffffff;">Click here to unsubscribe</span></a></p>
-                        </td>
-                    </tr>
-                </table>
-
-            </td>
+                  </table>
+                </td>
+              </tr>
+            </table>
+          </td>
         </tr>
-    </table>
+      </table>
+    </td>
+  </tr>
+</table>
 
-</td></tr></table>
+<!-- CONTAINER TABLE -->
+<table border="0" cellpadding="0" cellspacing="0" width="100%" style="table-layout: fixed;">
+  <tr>
+    <td align="center" bgcolor="#ebeef2" style="padding: 40px 0 40px 0;">
+      <!-- WRAPPER TABLE -->
+      <table border="0" cellpadding="0" cellspacing="0" width="600" class="wrapper">
+        <tr>
+          <td>
+            <!-- TWO COLUMNS -->
+            <table border="0" cellpadding="0" cellspacing="0" width="100%">
+              <tr>
+                <td>
+                  <!-- LEFT COLUMN -->
+                  <table border="0" cellpadding="0" cellspacing="0" width="47%" align="left" class="wrapper">
+                    <tr>
+                      <td>
+                        <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                          <tr>
+                            <td class="mobile-image-pad">
+                              <img src="http://res.cloudinary.com/ldeddydma/image/upload/v1482097579/two_e6twpx.jpg" alt="Get typing" width="280" height="218" border="0" style="display: block; padding: 0; color: #ffffff; font-family: Arial, sans-serif; font-weight: bold; font-size: 18px; background-color: #589263; -webkit-border-radius: 4px; border-radius: 4px;" class="fluid-image" />
+                            </td>
+                          </tr>
+                          <tr>
+                            <td align="left" style="padding: 20px 0 0 0; color: #111111; font-family: Arial, sans-serif; font-weight: bold; font-size: 18px; line-height: 22px;" class="mobile-title-pad">
+                              Sub-heading
+                            </td>
+                          </tr>
+                          <tr>
+                            <td align="left" style="padding: 10px 0 10px 0; color: #666666; font-family: Arial, sans-serif; font-weight: normal; font-size: 18px; line-height: 22px;" class="mobile-text-pad">
+                              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae quae similique non cupiditate, nulla fugit facere reprehenderit rerum temporibus. Voluptatum ut corporis sit cumque amet quod necessitatibus obcaecati, quia magni?
+                            </td>
+                          </tr>
+                        </table>
+                      </td>
+                    </tr>
+                  </table>
+                  <!-- RIGHT COLUMN -->
+                  <table border="0" cellpadding="0" cellspacing="0" width="47%" align="right" class="wrapper">
+                    <tr>
+                      <td class="mobile-column-right">
+                        <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                          <tr>
+                            <td class="mobile-image-pad">
+                              <img src="http://res.cloudinary.com/ldeddydma/image/upload/v1482097643/three_bfe5lx.jpg" alt="Frontend Masters" width="280" height="218" border="0" style="display: block; padding: 0; color: #ffffff; font-family: Arial, sans-serif; font-weight: bold; font-size: 18px; background-color: #564e75; -webkit-border-radius: 4px; border-radius: 4px;" class="fluid-image" />
+                            </td>
+                          </tr>
+                          <tr>
+                            <td align="left" style="padding: 20px 0 0 0; color: #111111; font-family: Arial, sans-serif; font-weight: bold; font-size: 18px; line-height: 22px;" class="mobile-title-pad">
+                              Sub-heading
+                            </td>
+                          </tr>
+                          <tr>
+                            <td align="left" style="padding: 10px 0 10px 0; color: #666666; font-family: Arial, sans-serif; font-weight: normal; font-size: 18px; line-height: 22px;" class="mobile-text-pad">
+                              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet nihil cum delectus, sunt sapiente aliquid asperiores dolorum repellendus, quaerat iure consequatur, adipisci veniam vero, maxime laboriosam molestias eveniet a aspernatur.
+                            </td>
+                          </tr>
+                        </table>
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+
+<!-- FOOTER -->
+<table border="0" cellpadding="0" cellspacing="0" width="100%" style="table-layout: fixed;">
+  <tr>
+    <td align="center" style="padding: 20px 0 20px 0;">
+      <!-- WRAPPER TABLE -->
+      <table border="0" cellpadding="0" cellspacing="0" width="600" align="center" class="wrapper">
+        <tr>
+          <td align="center" style="padding: 10px 0 10px 0; color: #666666; font-family: Arial, sans-serif; font-weight: normal; font-size: 14px; line-height: 18px;" class="mobile-text-pad">
+            Sick of these emails? <a href="#" style="color: #008080; text-decoration: none;">Unsubscribe</a> immediately.
+          </td>
+        </tr>
+        <tr>
+          <td align="center" style="padding: 10px 0 10px 0; color: #666666; font-family: Arial, sans-serif; font-weight: normal; font-size: 14px; line-height: 18px;" class="mobile-text-pad">
+            <span class="apple-links" style="color: #666666; text-decoration: none;">Agora Health<br>
+              117 Waterloo Road, Lambeth, London SE1 8UL, UK.<br>Tel: 0207 633 3630 Website: www.contactagora.co.uk</span>
+          </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
 
 </body>
 </html>
