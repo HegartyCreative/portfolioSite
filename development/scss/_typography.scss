@@ -17,7 +17,7 @@ h1, h2, h3, h4{
 h1{
 	font-size: 5em;
 	line-height: 45px;
-	color: #fff;
+	color: $primary-color;
 	text-shadow: 2px 2px #000;
 	margin-bottom: 40px;
 
@@ -45,7 +45,7 @@ h1{
 }
 
 h2{
-	font-size: 2.7em;
+	font-size: 2.4em;
 	line-height: 60px;
 	padding-top: 60px;
 	text-shadow: 2px 2px #000;
@@ -55,17 +55,19 @@ h2{
 	}
 
 	@include tablet{
-	font-size: 2em;
+	font-size: 1.8em;
+	padding-top: 20px;
+	line-height: 40px;
 	}
 
 	@include lg_phone{
-	font-size: 1.5em;
+	font-size: 1.4em;
 	line-height: 1.3em;
 	padding-top: 35px;
 	}
 
 	@include sm_phone{
-	font-size: 1.1em;
+	font-size: 1em;
 	line-height: 1.3em;
 	padding-top: 0px;
 	}
