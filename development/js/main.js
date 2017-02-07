@@ -64,7 +64,7 @@ $("document").ready(function(){
     $('.logo').each(function(){
 
 
-     var tween = TweenMax.fromTo($(this), 2, {autoAlpha: 0, scale: 0.85, ease:Linear.easeNone},
+     var tween = TweenMax.fromTo($(this), 2, { scale: 0.85, ease:Linear.easeNone},
         {autoAlpha: 1, scale: 1});
 
 
