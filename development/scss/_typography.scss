@@ -45,10 +45,11 @@ h1{
 }
 
 h2{
-	font-size: 2.4em;
+	font-size: 2.8em;
 	line-height: 60px;
 	padding-top: 60px;
 	text-shadow: 2px 2px #000;
+	text-transform: uppercase;
 
 	@include desktop{
 	font-size: 2.4em;
