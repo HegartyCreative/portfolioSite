@@ -1,107 +1,574 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<title>Agora Health Email Design</title>
+<title>Saatchi & Saatchi Wellness</title>
+<!--
 
+    SALTED | A RESPONSIVE EMAIL TEMPLATE
+    =====================================
+
+    Based on code used and tested by Litmus (@litmusapp)
+    Originally developed by Kevin Mandeville (@KEVINgotbounce)
+    Cleaned up by Jason Rodriguez (@rodriguezcommaj)
+    Presented by A List Apart (@alistapart)
+
+    Email is surprisingly hard. While this has been thoroughly tested, your mileage may vary.
+    It's highly recommended that you test using a service like Litmus and your own devices.
+
+    Enjoy!
+
+ -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
 <style type="text/css">
+    /* CLIENT-SPECIFIC STYLES */
+    #outlook a{padding:0;} /* Force Outlook to provide a "view in browser" message */
+    .ReadMsgBody{width:100%;} .ExternalClass{width:100%;} /* Force Hotmail to display emails at full width */
+    .ExternalClass, .ExternalClass p, .ExternalClass span, .ExternalClass font, .ExternalClass td, .ExternalClass div {line-height: 100%;} /* Force Hotmail to display normal line spacing */
+    body, table, td, a{-webkit-text-size-adjust:100%; -ms-text-size-adjust:100%;} /* Prevent WebKit and Windows mobile changing default text sizes */
+    table, td{mso-table-lspace:0pt; mso-table-rspace:0pt;} /* Remove spacing between tables in Outlook 2007 and up */
+    img{-ms-interpolation-mode:bicubic;} /* Allow smoother rendering of resized image in Internet Explorer */
+
+    /* RESET STYLES */
+    body{margin:0; padding:0;}
+    img{border:0; height:auto; line-height:100%; outline:none; text-decoration:none;}
+    table{border-collapse:collapse !important;}
+    body{height:100% !important; margin:0; padding:0; width:100% !important;}
+
+    /* iOS BLUE LINKS */
+    .appleBody a {color:#68440a; text-decoration: none;}
+    .appleFooter a {color:#999999; text-decoration: none;}
+
+    /* MOBILE STYLES */
+    @media screen and (max-width: 525px) {
+
+        /* ALLOWS FOR FLUID TABLES */
+        table[class="wrapper"]{
+          width:100% !important;
+        }
+
+        /* ADJUSTS LAYOUT OF LOGO IMAGE */
+        td[class="logo"]{
+          text-align: left;
+          padding: 20px 0 20px 0 !important;
+        }
+
+        td[class="logo"] img{
+          margin:0 auto!important;
+        }
+
+        /* USE THESE CLASSES TO HIDE CONTENT ON MOBILE */
+        td[class="mobile-hide"]{
+          display:none;}
+
+        img[class="mobile-hide"]{
+          display: none !important;
+        }
+
+        img[class="img-max"]{
+          max-width: 100% !important;
+          height:auto !important;
+        }
+
+        /* FULL-WIDTH TABLES */
+        table[class="responsive-table"]{
+          width:100%!important;
+        }
+
+        /* UTILITY CLASSES FOR ADJUSTING PADDING ON MOBILE */
+        td[class="padding"]{
+          padding: 10px 5% 15px 5% !important;
+        }
+
+        td[class="padding-copy"]{
+          padding: 10px 5% 10px 5% !important;
+          text-align: center;
+        }
+
+        td[class="padding-meta"]{
+          padding: 30px 5% 0px 5% !important;
+          text-align: center;
+        }
+
+        td[class="no-pad"]{
+          padding: 0 0 20px 0 !important;
+        }
+
+        td[class="no-padding"]{
+          padding: 0 !important;
+        }
+
+        td[class="section-padding"]{
+          padding: 50px 15px 50px 15px !important;
+        }
+
+        td[class="section-padding-bottom-image"]{
+          padding: 50px 15px 0 15px !important;
+        }
+
+        /* ADJUST BUTTONS ON MOBILE */
+        td[class="mobile-wrapper"]{
+            padding: 10px 5% 15px 5% !important;
+        }
+
+        table[class="mobile-button-container"]{
+            margin:0 auto;
+            width:100% !important;
+        }
+
+        a[class="mobile-button"]{
+            width:80% !important;
+            padding: 15px !important;
+            border: 0 !important;
+            font-size: 16px !important;
+        }
+
+    }
 </style>
-
 </head>
+<body style="margin: 0;padding: 0;-webkit-text-size-adjust: 100%;-ms-text-size-adjust: 100%;height: 100% !important;width: 100% !important;">
 
-<body>
+<!-- HEADER -->
+<table border="0" cellpadding="0" cellspacing="0" width="100%" style="-webkit-text-size-adjust: 100%;-ms-text-size-adjust: 100%;mso-table-lspace: 0pt;mso-table-rspace: 0pt;border-collapse: collapse !important;">
 
-<!-- Wrapper (psuedo body tag) table -->
-<table cellpadding="0" cellspacing="0" width="99%">
         <tr>
             <td bgcolor="#FFD034">
                 <p align="center" style="color: #ffffff; font-size: 16px; font-family: 'helvetica', Arial, Verdana, sans-serif;"><a href="index.html#email" style="color: #000;"><span style="color: #000;">SEAN HEGARTY CREATIVE LIMITED</span></a></p>
             </td>
         </tr>
-        <tr>
-        <td align="center" valign="top" width="99%">
-
-            <!-- Top basic links table -->
-            <table cellpadding="0" cellspacing="0" width="550px">
 
 
-                <tr>
-                    <td align="center" valign="top" width="" style="font-family: Arial, Helvetica, sans-serif; color: #808080; font-size: 9pt; font-weight: normal; line-height: 17px; margin-top: 0; margin-right: 0; margin-bottom: 0; margin-left: 0; padding-top: 0; padding-right: 10px; padding-bottom: 0px; padding-left: 0px">
-                        <p>You are receiving this email because you subscribed to our newsletter. <a style="color: #615f62; font-weight: bold;" href="#" target="_blank">Click here to unsubscribe.</a></p>
-                    </td>
-                </tr>
-            </table>
-            <!-- Close Top basic links table -->
-
-            <!-- Background table -->
-             <table cellpadding="25" cellspacing="0" width="550">
+    <tr>
+        <td bgcolor="#ffffff" style="-webkit-text-size-adjust: 100%;-ms-text-size-adjust: 100%;mso-table-lspace: 0pt;mso-table-rspace: 0pt;">
+            <div align="center" style="padding: 0px 15px 0px 15px;">
+                <table border="0" cellpadding="0" cellspacing="0" width="500" class="wrapper" style="-webkit-text-size-adjust: 100%;-ms-text-size-adjust: 100%;mso-table-lspace: 0pt;mso-table-rspace: 0pt;border-collapse: collapse !important;">
+                    <!-- LOGO/PREHEADER TEXT -->
                     <tr>
-                        <td align="center" valign="top" width="550" bgcolor="#f5f1e5">
-
-                            <!-- Content table -->
-                            <table cellpadding="0" cellspacing="0" width="500" bgcolor="#ffffff">
-
+                        <td style="padding: 20px 0px 30px 0px;-webkit-text-size-adjust: 100%;-ms-text-size-adjust: 100%;mso-table-lspace: 0pt;mso-table-rspace: 0pt;" class="logo">
+                            <table border="0" cellpadding="0" cellspacing="0" width="100%" style="-webkit-text-size-adjust: 100%;-ms-text-size-adjust: 100%;mso-table-lspace: 0pt;mso-table-rspace: 0pt;border-collapse: collapse !important;">
                                 <tr>
-                                    <td colspan="3"  align="center" valign="top" width="500" bgcolor="#ffffff">
-                                   <img style="border: none; display: block;" src="http://res.cloudinary.com/ldeddydma/image/upload/v1481281223/logo_jxyq9v.jpg" alt="Agora Health" title="Agora Health" height="150" width="500">
+                                    <td bgcolor="#ffffff" width="100" align="left" style="-webkit-text-size-adjust: 100%;-ms-text-size-adjust: 100%;mso-table-lspace: 0pt;mso-table-rspace: 0pt;"><a href="#" target="_blank" style="-webkit-text-size-adjust: 100%;-ms-text-size-adjust: 100%;"><img alt="Logo" src="http://res.cloudinary.com/ldeddydma/image/upload/v1496846737/logo_n7lln5.png" width="138" height="50" style="display: block;font-family: Helvetica, Arial, sans-serif;color: #666666;font-size: 16px;-ms-interpolation-mode: bicubic;border: 0;height: auto;line-height: 100%;outline: none;text-decoration: none;" border="0"></a></td>
+                                    <td bgcolor="#ffffff" width="400" align="right" class="mobile-hide" style="-webkit-text-size-adjust: 100%;-ms-text-size-adjust: 100%;mso-table-lspace: 0pt;mso-table-rspace: 0pt;">
+                                        <table border="0" cellpadding="0" cellspacing="0" style="-webkit-text-size-adjust: 100%;-ms-text-size-adjust: 100%;mso-table-lspace: 0pt;mso-table-rspace: 0pt;border-collapse: collapse !important;">
+                                            <tr>
+                                                <td align="right" style="padding: 0 0 5px 0;font-size: 14px;font-family: Arial, sans-serif;color: #666666;text-decoration: none;-webkit-text-size-adjust: 100%;-ms-text-size-adjust: 100%;mso-table-lspace: 0pt;mso-table-rspace: 0pt;"><span style="color: #666666; text-decoration: none;">Contact us</span></td>
+                                            </tr>
+                                        </table>
                                     </td>
                                 </tr>
-
-                                <tr>
-                                    <td colspan="3"  align="center" valign="top" width="500" bgcolor="#ffffff">
-                                    <h1 style="font-family: Arial, Helvetica, sans-serif; color: #808080; font-size: 18pt; font-weight: bold; line-height: 16px; margin-top: 0; margin-right: 0; margin-bottom: 0; margin-left: 0; padding-top: 20px; padding-right: 0; padding-bottom: 20px; padding-left: 0">Main heading</h1>
-                                    <h2 style="font-family: Arial, Helvetica, sans-serif; color: #808080; font-size: 16pt; font-weight: normal; line-height: 16px; margin-top: 0; margin-right: 0; margin-bottom: 0; margin-left: 0; padding-top: 0; padding-right: 0; padding-bottom: 20px; padding-left: 0">Sub heading</h2>
-                                    <p style="font-family: Arial, Helvetica, sans-serif; color: #808080; font-size: 12pt; font-weight: normal; line-height: 19px; margin-top: 0; margin-right: 0; margin-bottom: 0; margin-left: 0; padding-top: 0; padding-right: 20px; padding-bottom: 20px; padding-left: 20px">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae asperiores mollitia sequi perspiciatis aspernatur libero, itaque, enim, aut ducimus hic fugiat adipisci vero deserunt illum impedit ut eius. A, distinctio. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae asperiores mollitia sequi perspiciatis aspernatur libero, itaque, enim, aut ducimus hic fugiat adipisci vero deserunt illum impedit ut eius. A, distinctio.</p>
-                                    </td>
-                                </tr>
-
-                                <tr>
-                                    <td colspan="3"  align="center" valign="top" width="500" bgcolor="#f5f1e5">
-                                   <img style="border: none; display: block;" src="http://res.cloudinary.com/ldeddydma/image/upload/v1481281288/photo_wibfcq.jpg" alt="Agora Health" title="Agora Health" height="250" width="500">
-                                    </td>
-                                </tr>
-
-                                <tr>
-                                    <td colspan="3" align="center" valign="top" width="500" bgcolor="#ffffff" style="font-family: Arial, Helvetica, sans-serif; color: #808080; font-size: 10pt; font-weight: normal; line-height: 17px; margin-top: 0; margin-right: 0; margin-bottom: 0; margin-left: 0; padding-top: 0; padding-right: 30px; padding-bottom: 0px; padding-left: 30px">
-                                    <p>Agora Health Limited, 117 Waterloo Road, Lambeth, London SE1 8UL, UK. Tel: 0207 633 3630 Website: www.ContactAgora.co.uk</p>
-                                    </td>
-                                </tr>
-
-                                <tr>
-                                    <td align="left" valign="top" width="250" bgcolor="#ffffff" style="font-family: Arial, Helvetica, sans-serif; color: #808080; font-size: 9pt; font-weight: normal; line-height: 15px; margin-top: 0; margin-right: 0; margin-bottom: 0; margin-left: 0; padding-top: 0; padding-right: 0px; padding-bottom: 0px; padding-left: 10px">
-                                    <p>&copy Agora Health Limted.<br>All rights reserved.</p>
-                                    </td>
-                                 <td align="right" valign="top" width="200" bgcolor="#ffffff" style="font-family: Arial, Helvetica, sans-serif; color: #808080; font-size: 10pt; font-weight: normal; line-height: 17px; margin-top: 0; margin-right: 0; margin-bottom: 0; margin-left: 0; padding-top: 0; padding-right: 10px; padding-bottom: 0px; padding-left: 0px">
-                                    <p>Find us on Facebook</p>
-                                    </td>
-                                 <td align="center" valign="top" width="50" bgcolor="#ffffff">
-                                   <img style="border: none; display: block;" src="http://res.cloudinary.com/ldeddydma/image/upload/v1481288975/facebook_ugq1vo.svg" alt="Facebook logo" title="Agora Health" height="64" width="64">
-
-                                    </td>
-                                </tr>
-
                             </table>
-                            <!-- Close Content table -->
-
                         </td>
                     </tr>
                 </table>
-                <!-- Close Background table -->
-
-                <!-- Unscribe table -->
-            <table cellpadding="0" cellspacing="0" width="550px">
-                <tr>
-                    <td align="center" valign="top" width="" style="font-family: Arial, Helvetica, sans-serif; color: #808080; font-size: 9pt; font-weight: normal; line-height: 17px; margin-top: 0; margin-right: 0; margin-bottom: 0; margin-left: 0; padding-top: 0; padding-right: 10px; padding-bottom: 0px; padding-left: 0px">
-                        <p>You are receiving this email because you subscribed to our newsletter. <a style="color: #615f62; font-weight: bold;" href="#" target="_blank">Click here to unsubscribe.</a></p>
-                    </td>
-                </tr>
-            </table>
-            <!-- Close unsubscribe table -->
-
-
+            </div>
         </td>
     </tr>
 </table>
-<!-- Close Wrapper (psuedo body tag) table -->
+
+<!-- ONE COLUMN SECTION -->
+<table border="0" cellpadding="0" cellspacing="0" width="100%" style="-webkit-text-size-adjust: 100%;-ms-text-size-adjust: 100%;mso-table-lspace: 0pt;mso-table-rspace: 0pt;border-collapse: collapse !important;">
+    <tr>
+        <td bgcolor="#ffffff" align="center" style="padding: 70px 15px 70px 15px;-webkit-text-size-adjust: 100%;-ms-text-size-adjust: 100%;mso-table-lspace: 0pt;mso-table-rspace: 0pt;" class="section-padding">
+            <table border="0" cellpadding="0" cellspacing="0" width="500" class="responsive-table" style="-webkit-text-size-adjust: 100%;-ms-text-size-adjust: 100%;mso-table-lspace: 0pt;mso-table-rspace: 0pt;border-collapse: collapse !important;">
+                <tr>
+                    <td style="-webkit-text-size-adjust: 100%;-ms-text-size-adjust: 100%;mso-table-lspace: 0pt;mso-table-rspace: 0pt;">
+                        <table width="100%" border="0" cellspacing="0" cellpadding="0" style="-webkit-text-size-adjust: 100%;-ms-text-size-adjust: 100%;mso-table-lspace: 0pt;mso-table-rspace: 0pt;border-collapse: collapse !important;">
+                            <tr>
+                                <td style="-webkit-text-size-adjust: 100%;-ms-text-size-adjust: 100%;mso-table-lspace: 0pt;mso-table-rspace: 0pt;">
+                                    <!-- HERO IMAGE -->
+                                    <table width="100%" border="0" cellspacing="0" cellpadding="0" style="-webkit-text-size-adjust: 100%;-ms-text-size-adjust: 100%;mso-table-lspace: 0pt;mso-table-rspace: 0pt;border-collapse: collapse !important;">
+                                        <tbody>
+                                             <tr>
+                                                  <td class="padding-copy" style="-webkit-text-size-adjust: 100%;-ms-text-size-adjust: 100%;mso-table-lspace: 0pt;mso-table-rspace: 0pt;">
+                                                      <table width="100%" border="0" cellspacing="0" cellpadding="0" style="-webkit-text-size-adjust: 100%;-ms-text-size-adjust: 100%;mso-table-lspace: 0pt;mso-table-rspace: 0pt;border-collapse: collapse !important;">
+                                                          <tr>
+                                                              <td style="-webkit-text-size-adjust: 100%;-ms-text-size-adjust: 100%;mso-table-lspace: 0pt;mso-table-rspace: 0pt;">
+                                                                  <a href="#" target="_blank" style="-webkit-text-size-adjust: 100%;-ms-text-size-adjust: 100%;"><img src="http://res.cloudinary.com/ldeddydma/image/upload/v1496846739/hero_ozbchj.jpg" width="500" height="200" border="0" alt="Can an email really be responsive?" style="display: block;padding: 0;color: #666666;text-decoration: none;font-family: Helvetica, arial, sans-serif;font-size: 16px;width: 500px;height: 200px;-ms-interpolation-mode: bicubic;border: 0;line-height: 100%;outline: none;" class="img-max"></a>
+                                                              </td>
+                                                            </tr>
+                                                        </table>
+                                                  </td>
+                                              </tr>
+                                        </tbody>
+                                    </table>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="-webkit-text-size-adjust: 100%;-ms-text-size-adjust: 100%;mso-table-lspace: 0pt;mso-table-rspace: 0pt;">
+                                    <!-- COPY -->
+                                    <table width="100%" border="0" cellspacing="0" cellpadding="0" style="-webkit-text-size-adjust: 100%;-ms-text-size-adjust: 100%;mso-table-lspace: 0pt;mso-table-rspace: 0pt;border-collapse: collapse !important;">
+                                        <tr>
+                                            <td align="center" style="font-size: 25px;font-family: Helvetica, Arial, sans-serif;color: #333333;padding-top: 30px;-webkit-text-size-adjust: 100%;-ms-text-size-adjust: 100%;mso-table-lspace: 0pt;mso-table-rspace: 0pt;" class="padding-copy">We create ideas that stir, rouse, awaken and MOVE</td>
+                                        </tr>
+                                        <tr>
+                                            <td align="center" style="padding: 20px 0 0 0;font-size: 16px;line-height: 25px;font-family: Helvetica, Arial, sans-serif;color: #666666;-webkit-text-size-adjust: 100%;-ms-text-size-adjust: 100%;mso-table-lspace: 0pt;mso-table-rspace: 0pt;" class="padding-copy">Saatchi & Saatchi Wellness develops communications that build brands and promote well-being</td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="-webkit-text-size-adjust: 100%;-ms-text-size-adjust: 100%;mso-table-lspace: 0pt;mso-table-rspace: 0pt;">
+                                    <!-- BULLETPROOF BUTTON -->
+                                    <table width="100%" border="0" cellspacing="0" cellpadding="0" class="mobile-button-container" style="-webkit-text-size-adjust: 100%;-ms-text-size-adjust: 100%;mso-table-lspace: 0pt;mso-table-rspace: 0pt;border-collapse: collapse !important;">
+                                        <tr>
+                                            <td align="center" style="padding: 25px 0 0 0;-webkit-text-size-adjust: 100%;-ms-text-size-adjust: 100%;mso-table-lspace: 0pt;mso-table-rspace: 0pt;" class="padding-copy">
+                                                <table border="0" cellspacing="0" cellpadding="0" class="responsive-table" style="-webkit-text-size-adjust: 100%;-ms-text-size-adjust: 100%;mso-table-lspace: 0pt;mso-table-rspace: 0pt;border-collapse: collapse !important;">
+                                                    <tr>
+                                                        <td align="center" style="-webkit-text-size-adjust: 100%;-ms-text-size-adjust: 100%;mso-table-lspace: 0pt;mso-table-rspace: 0pt;"><a href="#" target="_blank" style="font-size: 16px;font-family: Helvetica, Arial, sans-serif;font-weight: normal;color: #ffffff;text-decoration: none;background-color: #313131;border-top: 15px solid #313131;border-bottom: 15px solid #313131;border-left: 25px solid #313131;border-right: 25px solid #313131;border-radius: 3px;-webkit-border-radius: 3px;-moz-border-radius: 3px;display: inline-block;-webkit-text-size-adjust: 100%;-ms-text-size-adjust: 100%;" class="mobile-button">Learn More &rarr;</a></td>
+                                                    </tr>
+                                                </table>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+</table>
+
+<!-- ONE COLUMN W/ BOTTOM IMAGE SECTION -->
+<table border="0" cellpadding="0" cellspacing="0" width="100%" style="-webkit-text-size-adjust: 100%;-ms-text-size-adjust: 100%;mso-table-lspace: 0pt;mso-table-rspace: 0pt;border-collapse: collapse !important;">
+    <tr>
+        <td bgcolor="#f8f8f8" align="center" style="padding: 70px 15px 0 15px;-webkit-text-size-adjust: 100%;-ms-text-size-adjust: 100%;mso-table-lspace: 0pt;mso-table-rspace: 0pt;" class="section-padding-bottom-image">
+            <table border="0" cellpadding="0" cellspacing="0" width="500" class="responsive-table" style="-webkit-text-size-adjust: 100%;-ms-text-size-adjust: 100%;mso-table-lspace: 0pt;mso-table-rspace: 0pt;border-collapse: collapse !important;">
+                <tr>
+                    <td style="-webkit-text-size-adjust: 100%;-ms-text-size-adjust: 100%;mso-table-lspace: 0pt;mso-table-rspace: 0pt;">
+                        <table width="100%" border="0" cellspacing="0" cellpadding="0" style="-webkit-text-size-adjust: 100%;-ms-text-size-adjust: 100%;mso-table-lspace: 0pt;mso-table-rspace: 0pt;border-collapse: collapse !important;">
+                            <tr>
+                                <td style="-webkit-text-size-adjust: 100%;-ms-text-size-adjust: 100%;mso-table-lspace: 0pt;mso-table-rspace: 0pt;">
+                                    <!-- COPY -->
+                                    <table width="100%" border="0" cellspacing="0" cellpadding="0" style="-webkit-text-size-adjust: 100%;-ms-text-size-adjust: 100%;mso-table-lspace: 0pt;mso-table-rspace: 0pt;border-collapse: collapse !important;">
+                                        <tr>
+                                            <td align="center" style="font-size: 25px;font-family: Helvetica, Arial, sans-serif;color: #333333;-webkit-text-size-adjust: 100%;-ms-text-size-adjust: 100%;mso-table-lspace: 0pt;mso-table-rspace: 0pt;" class="padding-copy">Human beings are moved into action by EMOTION</td>
+                                        </tr>
+                                        <tr>
+                                            <td align="center" style="padding: 20px 0 0 0;font-size: 16px;line-height: 25px;font-family: Helvetica, Arial, sans-serif;color: #666666;-webkit-text-size-adjust: 100%;-ms-text-size-adjust: 100%;mso-table-lspace: 0pt;mso-table-rspace: 0pt;" class="padding-copy">Be that joy, anger sadness or surprise</td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="-webkit-text-size-adjust: 100%;-ms-text-size-adjust: 100%;mso-table-lspace: 0pt;mso-table-rspace: 0pt;">
+                                    <!-- BULLETPROOF BUTTON -->
+                                    <table width="100%" border="0" cellspacing="0" cellpadding="0" class="mobile-button-container" style="-webkit-text-size-adjust: 100%;-ms-text-size-adjust: 100%;mso-table-lspace: 0pt;mso-table-rspace: 0pt;border-collapse: collapse !important;">
+                                        <tr>
+                                            <td align="center" style="padding: 25px 0 0 0;-webkit-text-size-adjust: 100%;-ms-text-size-adjust: 100%;mso-table-lspace: 0pt;mso-table-rspace: 0pt;" class="padding-copy">
+                                                <table border="0" cellspacing="0" cellpadding="0" class="responsive-table" style="-webkit-text-size-adjust: 100%;-ms-text-size-adjust: 100%;mso-table-lspace: 0pt;mso-table-rspace: 0pt;border-collapse: collapse !important;">
+                                                    <tr>
+                                                        <td align="center" style="-webkit-text-size-adjust: 100%;-ms-text-size-adjust: 100%;mso-table-lspace: 0pt;mso-table-rspace: 0pt;"><a href="#" target="_blank" style="font-size: 16px;font-family: Helvetica, Arial, sans-serif;font-weight: normal;color: #ffffff;text-decoration: none;background-color: #313131;border-top: 15px solid #313131;border-bottom: 15px solid #313131;border-left: 25px solid #313131;border-right: 25px solid #313131;border-radius: 3px;-webkit-border-radius: 3px;-moz-border-radius: 3px;display: inline-block;-webkit-text-size-adjust: 100%;-ms-text-size-adjust: 100%;" class="mobile-button">Learn More &rarr;</a></td>
+                                                    </tr>
+                                                </table>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="-webkit-text-size-adjust: 100%;-ms-text-size-adjust: 100%;mso-table-lspace: 0pt;mso-table-rspace: 0pt;">
+                                    <!--  BOTTOM IMAGE -->
+                                    <table width="100%" border="0" cellspacing="0" cellpadding="0" style="-webkit-text-size-adjust: 100%;-ms-text-size-adjust: 100%;mso-table-lspace: 0pt;mso-table-rspace: 0pt;border-collapse: collapse !important;">
+                                        <tr>
+                                            <td style="padding: 50px 0 0 0;-webkit-text-size-adjust: 100%;-ms-text-size-adjust: 100%;mso-table-lspace: 0pt;mso-table-rspace: 0pt;" align="center">
+                                                <a href="#" target="_blank" style="-webkit-text-size-adjust: 100%;-ms-text-size-adjust: 100%;"><img src="http://res.cloudinary.com/ldeddydma/image/upload/v1496846738/hands_dholrv.jpg" width="500" height="300" border="0" alt="Mobile opens are on the rise" class="img-max" style="display: block;padding: 0;font-family: Helvetica, Arial, sans-serif;color: #666666;width: 500px;height: 300px;-ms-interpolation-mode: bicubic;border: 0;line-height: 100%;outline: none;text-decoration: none;"></a>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+</table>
+
+<!-- TWO COLUMN SECTION -->
+<table border="0" cellpadding="0" cellspacing="0" width="100%" style="-webkit-text-size-adjust: 100%;-ms-text-size-adjust: 100%;mso-table-lspace: 0pt;mso-table-rspace: 0pt;border-collapse: collapse !important;">
+    <tr>
+        <td bgcolor="#ffffff" align="center" style="padding: 70px 15px 70px 15px;-webkit-text-size-adjust: 100%;-ms-text-size-adjust: 100%;mso-table-lspace: 0pt;mso-table-rspace: 0pt;" class="section-padding">
+            <table border="0" cellpadding="0" cellspacing="0" width="500" class="responsive-table" style="-webkit-text-size-adjust: 100%;-ms-text-size-adjust: 100%;mso-table-lspace: 0pt;mso-table-rspace: 0pt;border-collapse: collapse !important;">
+                <tr>
+                    <td style="-webkit-text-size-adjust: 100%;-ms-text-size-adjust: 100%;mso-table-lspace: 0pt;mso-table-rspace: 0pt;">
+                        <!-- TITLE SECTION AND COPY -->
+                        <table width="100%" border="0" cellspacing="0" cellpadding="0" style="-webkit-text-size-adjust: 100%;-ms-text-size-adjust: 100%;mso-table-lspace: 0pt;mso-table-rspace: 0pt;border-collapse: collapse !important;">
+                            <tr>
+                                <td align="center" style="font-size: 25px;font-family: Helvetica, Arial, sans-serif;color: #333333;-webkit-text-size-adjust: 100%;-ms-text-size-adjust: 100%;mso-table-lspace: 0pt;mso-table-rspace: 0pt;" class="padding-copy">SSW promotes wellness in a smart, meaningful, EMOTIONAL kind of way</td>
+                            </tr>
+                            <tr>
+                                <td align="center" style="padding: 20px 0 20px 0;font-size: 16px;line-height: 25px;font-family: Helvetica, Arial, sans-serif;color: #666666;-webkit-text-size-adjust: 100%;-ms-text-size-adjust: 100%;mso-table-lspace: 0pt;mso-table-rspace: 0pt;" class="padding-copy">Our work inspires wellness - online, on-air, everywhere</td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="-webkit-text-size-adjust: 100%;-ms-text-size-adjust: 100%;mso-table-lspace: 0pt;mso-table-rspace: 0pt;">
+                        <!-- TWO COLUMNS -->
+                        <table cellspacing="0" cellpadding="0" border="0" width="100%" style="-webkit-text-size-adjust: 100%;-ms-text-size-adjust: 100%;mso-table-lspace: 0pt;mso-table-rspace: 0pt;border-collapse: collapse !important;">
+                            <tr>
+                                <td valign="top" style="padding: 0;-webkit-text-size-adjust: 100%;-ms-text-size-adjust: 100%;mso-table-lspace: 0pt;mso-table-rspace: 0pt;" class="mobile-wrapper">
+                                    <!-- LEFT COLUMN -->
+                                    <table cellpadding="0" cellspacing="0" border="0" width="47%" align="left" class="responsive-table" style="-webkit-text-size-adjust: 100%;-ms-text-size-adjust: 100%;mso-table-lspace: 0pt;mso-table-rspace: 0pt;border-collapse: collapse !important;">
+                                        <tr>
+                                            <td style="padding: 20px 0 40px 0;-webkit-text-size-adjust: 100%;-ms-text-size-adjust: 100%;mso-table-lspace: 0pt;mso-table-rspace: 0pt;">
+                                                <table cellpadding="0" cellspacing="0" border="0" width="100%" style="-webkit-text-size-adjust: 100%;-ms-text-size-adjust: 100%;mso-table-lspace: 0pt;mso-table-rspace: 0pt;border-collapse: collapse !important;">
+                                                    <tr>
+                                                        <td align="center" bgcolor="#ffffff" valign="middle" style="-webkit-text-size-adjust: 100%;-ms-text-size-adjust: 100%;mso-table-lspace: 0pt;mso-table-rspace: 0pt;"><a href="#" target="_blank" style="-webkit-text-size-adjust: 100%;-ms-text-size-adjust: 100%;"><img src="http://res.cloudinary.com/ldeddydma/image/upload/v1496846739/about_taksrv.jpg" width="240" height="130" style="display: block;color: #666666;font-family: Helvetica, arial, sans-serif;font-size: 13px;width: 240px;height: 130px;-ms-interpolation-mode: bicubic;border: 0;line-height: 100%;outline: none;text-decoration: none;" alt="Fluid images" border="0" class="img-max"></a></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td align="center" style="padding: 15px 0 0 0;font-family: Arial, sans-serif;color: #333333;font-size: 20px;-webkit-text-size-adjust: 100%;-ms-text-size-adjust: 100%;mso-table-lspace: 0pt;mso-table-rspace: 0pt;" bgcolor="#ffffff">About us</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td align="center" style="padding: 5px 0 0 0;font-family: Arial, sans-serif;color: #666666;font-size: 14px;line-height: 20px;-webkit-text-size-adjust: 100%;-ms-text-size-adjust: 100%;mso-table-lspace: 0pt;mso-table-rspace: 0pt;" bgcolor="#ffffff"><span class="appleBody"><span style="font-family:Lucida Console, monospace;"></span>Saatchi & Saatchi Wellness: Infusing the rational with a healthy dose of the emotional</span></td>
+                                                    </tr>
+                                                </table>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                    <!-- RIGHT COLUMN -->
+                                    <table cellpadding="0" cellspacing="0" border="0" width="47%" align="right" class="responsive-table" style="-webkit-text-size-adjust: 100%;-ms-text-size-adjust: 100%;mso-table-lspace: 0pt;mso-table-rspace: 0pt;border-collapse: collapse !important;">
+                                        <tr>
+                                            <td style="padding: 20px 0 40px 0;-webkit-text-size-adjust: 100%;-ms-text-size-adjust: 100%;mso-table-lspace: 0pt;mso-table-rspace: 0pt;">
+                                                <table cellpadding="0" cellspacing="0" border="0" width="100%" style="-webkit-text-size-adjust: 100%;-ms-text-size-adjust: 100%;mso-table-lspace: 0pt;mso-table-rspace: 0pt;border-collapse: collapse !important;">
+                                                    <tr>
+                                                        <td align="center" bgcolor="#ffffff" valign="middle" style="-webkit-text-size-adjust: 100%;-ms-text-size-adjust: 100%;mso-table-lspace: 0pt;mso-table-rspace: 0pt;"><a href="#" target="_blank" style="-webkit-text-size-adjust: 100%;-ms-text-size-adjust: 100%;"><img src="http://res.cloudinary.com/ldeddydma/image/upload/v1496846738/salon_xho2xi.jpg" width="240" height="130" style="display: block;color: #666666;font-family: Helvetica, arial, sans-serif;font-size: 13px;width: 240px;height: 130px;-ms-interpolation-mode: bicubic;border: 0;line-height: 100%;outline: none;text-decoration: none;" alt="Fluid structures" border="0" class="img-max"></a></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td align="center" style="padding: 15px 0 0 0;font-family: Arial, sans-serif;color: #333333;font-size: 20px;-webkit-text-size-adjust: 100%;-ms-text-size-adjust: 100%;mso-table-lspace: 0pt;mso-table-rspace: 0pt;" bgcolor="#ffffff">Salon</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td align="center" style="padding: 5px 0 0 0;font-family: Arial, sans-serif;color: #666666;font-size: 14px;line-height: 20px;-webkit-text-size-adjust: 100%;-ms-text-size-adjust: 100%;mso-table-lspace: 0pt;mso-table-rspace: 0pt;" bgcolor="#ffffff"><span class="appleBody">Saatchi Salon: Bringing together innovators in health, wellness and technology</span></td>
+                                                    </tr>
+                                                </table>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="-webkit-text-size-adjust: 100%;-ms-text-size-adjust: 100%;mso-table-lspace: 0pt;mso-table-rspace: 0pt;">
+                        <!-- TWO COLUMNS -->
+                        <table cellspacing="0" cellpadding="0" border="0" width="100%" style="-webkit-text-size-adjust: 100%;-ms-text-size-adjust: 100%;mso-table-lspace: 0pt;mso-table-rspace: 0pt;border-collapse: collapse !important;">
+                            <tr>
+                                <td valign="top" style="padding: 0;-webkit-text-size-adjust: 100%;-ms-text-size-adjust: 100%;mso-table-lspace: 0pt;mso-table-rspace: 0pt;" class="mobile-wrapper">
+                                    <!-- LEFT COLUMN -->
+                                    <table cellpadding="0" cellspacing="0" border="0" width="47%" align="left" class="responsive-table" style="-webkit-text-size-adjust: 100%;-ms-text-size-adjust: 100%;mso-table-lspace: 0pt;mso-table-rspace: 0pt;border-collapse: collapse !important;">
+                                        <tr>
+                                            <td style="padding: 20px 0 40px 0;-webkit-text-size-adjust: 100%;-ms-text-size-adjust: 100%;mso-table-lspace: 0pt;mso-table-rspace: 0pt;">
+                                                <table cellpadding="0" cellspacing="0" border="0" width="100%" style="-webkit-text-size-adjust: 100%;-ms-text-size-adjust: 100%;mso-table-lspace: 0pt;mso-table-rspace: 0pt;border-collapse: collapse !important;">
+                                                    <tr>
+                                                        <td align="center" bgcolor="#ffffff" valign="middle" style="-webkit-text-size-adjust: 100%;-ms-text-size-adjust: 100%;mso-table-lspace: 0pt;mso-table-rspace: 0pt;"><a href="#" target="_blank" style="-webkit-text-size-adjust: 100%;-ms-text-size-adjust: 100%;"><img src="http://res.cloudinary.com/ldeddydma/image/upload/v1496846738/work_mhxqfe.jpg" width="240" height="130" style="display: block;color: #666666;font-family: Helvetica, arial, sans-serif;font-size: 13px;width: 240px;height: 130px;-ms-interpolation-mode: bicubic;border: 0;line-height: 100%;outline: none;text-decoration: none;" alt="Media queries" border="0" class="img-max"></a></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td align="center" style="padding: 15px 0 0 0;font-family: Arial, sans-serif;color: #333333;font-size: 20px;-webkit-text-size-adjust: 100%;-ms-text-size-adjust: 100%;mso-table-lspace: 0pt;mso-table-rspace: 0pt;" bgcolor="#ffffff">Our work</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td align="center" style="padding: 5px 0 0 0;font-family: Arial, sans-serif;color: #666666;font-size: 14px;line-height: 20px;-webkit-text-size-adjust: 100%;-ms-text-size-adjust: 100%;mso-table-lspace: 0pt;mso-table-rspace: 0pt;" bgcolor="#ffffff"><span class="appleBody">SSW Work: Inspiring consumers and healthcare professionals to embrace total well-being</span></td>
+                                                    </tr>
+                                                </table>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                    <!-- RIGHT COLUMN -->
+                                    <table cellpadding="0" cellspacing="0" border="0" width="47%" align="right" class="responsive-table" style="-webkit-text-size-adjust: 100%;-ms-text-size-adjust: 100%;mso-table-lspace: 0pt;mso-table-rspace: 0pt;border-collapse: collapse !important;">
+                                        <tr>
+                                            <td style="padding: 20px 0 40px 0;-webkit-text-size-adjust: 100%;-ms-text-size-adjust: 100%;mso-table-lspace: 0pt;mso-table-rspace: 0pt;">
+                                                <table cellpadding="0" cellspacing="0" border="0" width="100%" style="-webkit-text-size-adjust: 100%;-ms-text-size-adjust: 100%;mso-table-lspace: 0pt;mso-table-rspace: 0pt;border-collapse: collapse !important;">
+                                                    <tr>
+                                                        <td align="center" bgcolor="#ffffff" valign="middle" style="-webkit-text-size-adjust: 100%;-ms-text-size-adjust: 100%;mso-table-lspace: 0pt;mso-table-rspace: 0pt;"><a href="#" target="_blank" style="-webkit-text-size-adjust: 100%;-ms-text-size-adjust: 100%;"><img src="http://res.cloudinary.com/ldeddydma/image/upload/v1496846738/inspiration_jbakct.jpg" width="240" height="130" style="display: block;color: #666666;font-family: Helvetica, arial, sans-serif;font-size: 13px;width: 240px;height: 130px;-ms-interpolation-mode: bicubic;border: 0;line-height: 100%;outline: none;text-decoration: none;" alt="Bulletproof buttons" border="0" class="img-max"></a></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td align="center" style="padding: 15px 0 0 0;font-family: Arial, sans-serif;color: #333333;font-size: 20px;-webkit-text-size-adjust: 100%;-ms-text-size-adjust: 100%;mso-table-lspace: 0pt;mso-table-rspace: 0pt;" bgcolor="#ffffff">Inspiration</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td align="center" style="padding: 5px 0 0 0;font-family: Arial, sans-serif;color: #666666;font-size: 14px;line-height: 20px;-webkit-text-size-adjust: 100%;-ms-text-size-adjust: 100%;mso-table-lspace: 0pt;mso-table-rspace: 0pt;" bgcolor="#ffffff"><span class="appleBody">SSW Inspiration: Discovering what’s possible in health and wellness.</span></td>
+                                                    </tr>
+                                                </table>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+</table>
+
+
+<!-- COMPACT ARTICLE SECTION -->
+<table border="0" cellpadding="0" cellspacing="0" width="100%" style="-webkit-text-size-adjust: 100%;-ms-text-size-adjust: 100%;mso-table-lspace: 0pt;mso-table-rspace: 0pt;border-collapse: collapse !important;">
+    <tr>
+        <td bgcolor="#f8f8f8" align="center" style="padding: 70px 15px 70px 15px;-webkit-text-size-adjust: 100%;-ms-text-size-adjust: 100%;mso-table-lspace: 0pt;mso-table-rspace: 0pt;" class="section-padding">
+            <table border="0" cellpadding="0" cellspacing="0" width="500" style="padding: 0 0 20px 0;-webkit-text-size-adjust: 100%;-ms-text-size-adjust: 100%;mso-table-lspace: 0pt;mso-table-rspace: 0pt;border-collapse: collapse !important;" class="responsive-table">
+                <!-- TITLE -->
+                <tr>
+                    <td align="left" style="padding: 0 0 10px 130px;font-size: 25px;font-family: Helvetica, Arial, sans-serif;font-weight: normal;color: #333333;-webkit-text-size-adjust: 100%;-ms-text-size-adjust: 100%;mso-table-lspace: 0pt;mso-table-rspace: 0pt;" class="padding-copy" colspan="2">Featured work</td>
+                </tr>
+                <tr>
+                    <td valign="top" style="padding: 40px 0 0 0;-webkit-text-size-adjust: 100%;-ms-text-size-adjust: 100%;mso-table-lspace: 0pt;mso-table-rspace: 0pt;" class="mobile-hide"><a href="#" target="_blank" style="-webkit-text-size-adjust: 100%;-ms-text-size-adjust: 100%;"><img src="http://res.cloudinary.com/ldeddydma/image/upload/v1496846738/exhale_me7eyq.jpg" alt="Litmus" width="105" height="105" border="0" style="display: block;font-family: Arial;color: #666666;font-size: 14px;width: 105px;height: 105px;-ms-interpolation-mode: bicubic;border: 0;line-height: 100%;outline: none;text-decoration: none;"></a></td>
+                    <td style="padding: 40px 0 0 0;-webkit-text-size-adjust: 100%;-ms-text-size-adjust: 100%;mso-table-lspace: 0pt;mso-table-rspace: 0pt;" class="no-padding">
+                        <!-- ARTICLE -->
+                        <table border="0" cellspacing="0" cellpadding="0" width="100%" style="-webkit-text-size-adjust: 100%;-ms-text-size-adjust: 100%;mso-table-lspace: 0pt;mso-table-rspace: 0pt;border-collapse: collapse !important;">
+                            <tr>
+                                <td align="left" style="padding: 0 0 5px 25px;font-size: 13px;font-family: Helvetica, Arial, sans-serif;font-weight: normal;color: #aaaaaa;-webkit-text-size-adjust: 100%;-ms-text-size-adjust: 100%;mso-table-lspace: 0pt;mso-table-rspace: 0pt;" class="padding-meta">Exhale Barre</td>
+                            </tr>
+                            <tr>
+                                <td align="left" style="padding: 0 0 5px 25px;font-size: 22px;font-family: Helvetica, Arial, sans-serif;font-weight: normal;color: #333333;-webkit-text-size-adjust: 100%;-ms-text-size-adjust: 100%;mso-table-lspace: 0pt;mso-table-rspace: 0pt;" class="padding-copy">POP Posters, Website, In-Studio Murals</td>
+                            </tr>
+                            <tr>
+                                 <td align="left" style="padding: 10px 0 15px 25px;font-size: 16px;line-height: 24px;font-family: Helvetica, Arial, sans-serif;color: #666666;-webkit-text-size-adjust: 100%;-ms-text-size-adjust: 100%;mso-table-lspace: 0pt;mso-table-rspace: 0pt;" class="padding-copy">To motivate women striving to achieve a toned body within a "chilled" aura, SSW launched a multimedia campaign for this collection of innovative studios offering Core Fusion fitness and yoga classes—as well as transformative spa treatments.</td>
+                            </tr>
+                            <tr>
+                                <td style="padding: 0 0 45px 25px;-webkit-text-size-adjust: 100%;-ms-text-size-adjust: 100%;mso-table-lspace: 0pt;mso-table-rspace: 0pt;" align="left" class="padding">
+                                    <table border="0" cellspacing="0" cellpadding="0" class="mobile-button-container" style="-webkit-text-size-adjust: 100%;-ms-text-size-adjust: 100%;mso-table-lspace: 0pt;mso-table-rspace: 0pt;border-collapse: collapse !important;">
+                                        <tr>
+                                            <td align="center" style="-webkit-text-size-adjust: 100%;-ms-text-size-adjust: 100%;mso-table-lspace: 0pt;mso-table-rspace: 0pt;">
+                                                <!-- BULLETPROOF BUTTON -->
+                                                <table width="100%" border="0" cellspacing="0" cellpadding="0" class="mobile-button-container" style="-webkit-text-size-adjust: 100%;-ms-text-size-adjust: 100%;mso-table-lspace: 0pt;mso-table-rspace: 0pt;border-collapse: collapse !important;">
+                                                    <tr>
+                                                        <td align="center" style="padding: 0;-webkit-text-size-adjust: 100%;-ms-text-size-adjust: 100%;mso-table-lspace: 0pt;mso-table-rspace: 0pt;" class="padding-copy">
+                                                            <table border="0" cellspacing="0" cellpadding="0" class="responsive-table" style="-webkit-text-size-adjust: 100%;-ms-text-size-adjust: 100%;mso-table-lspace: 0pt;mso-table-rspace: 0pt;border-collapse: collapse !important;">
+                                                                <tr>
+                                                                <td align="center" style="-webkit-text-size-adjust: 100%;-ms-text-size-adjust: 100%;mso-table-lspace: 0pt;mso-table-rspace: 0pt;"><a href="#" target="_blank" style="font-size: 15px;font-family: Helvetica, Arial, sans-serif;font-weight: normal;color: #ffffff;text-decoration: none;background-color: #313131;border-top: 10px solid #313131;border-bottom: 10px solid #313131;border-left: 20px solid #313131;border-right: 20px solid #313131;border-radius: 3px;-webkit-border-radius: 3px;-moz-border-radius: 3px;display: inline-block;-webkit-text-size-adjust: 100%;-ms-text-size-adjust: 100%;" class="mobile-button">Learn More &rarr;</a></td>
+                                                                </tr>
+                                                            </table>
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                <tr>
+                    <td valign="top" style="padding: 40px 0 0 0;-webkit-text-size-adjust: 100%;-ms-text-size-adjust: 100%;mso-table-lspace: 0pt;mso-table-rspace: 0pt;" class="mobile-hide"><a href="#" target="_blank" style="-webkit-text-size-adjust: 100%;-ms-text-size-adjust: 100%;"><img src="http://res.cloudinary.com/ldeddydma/image/upload/v1496846738/crime_sijnca.jpg" alt="Freddie!" width="105" height="105" border="0" style="display: block;font-family: Arial;color: #666666;font-size: 14px;width: 105px;height: 105px;-ms-interpolation-mode: bicubic;border: 0;line-height: 100%;outline: none;text-decoration: none;"></a></td>
+                    <td style="padding: 40px 0 0 0;-webkit-text-size-adjust: 100%;-ms-text-size-adjust: 100%;mso-table-lspace: 0pt;mso-table-rspace: 0pt;" class="no-padding">
+                        <!-- ARTICLE -->
+                        <table border="0" cellspacing="0" cellpadding="0" width="100%" style="-webkit-text-size-adjust: 100%;-ms-text-size-adjust: 100%;mso-table-lspace: 0pt;mso-table-rspace: 0pt;border-collapse: collapse !important;">
+                            <tr>
+                                <td align="left" style="padding: 0 0 5px 25px;font-size: 13px;font-family: Helvetica, Arial, sans-serif;font-weight: normal;color: #aaaaaa;-webkit-text-size-adjust: 100%;-ms-text-size-adjust: 100%;mso-table-lspace: 0pt;mso-table-rspace: 0pt;" class="padding-meta">Coalition to stop gun violence</td>
+                            </tr>
+                            <tr>
+                                <td align="left" style="padding: 0 0 5px 25px;font-size: 22px;font-family: Helvetica, Arial, sans-serif;font-weight: normal;color: #333333;-webkit-text-size-adjust: 100%;-ms-text-size-adjust: 100%;mso-table-lspace: 0pt;mso-table-rspace: 0pt;" class="padding-copy">Online PSA Films</td>
+                            </tr>
+                            <tr>
+                                 <td align="left" style="padding: 10px 0 15px 25px;font-size: 16px;line-height: 24px;font-family: Helvetica, Arial, sans-serif;color: #666666;-webkit-text-size-adjust: 100%;-ms-text-size-adjust: 100%;mso-table-lspace: 0pt;mso-table-rspace: 0pt;" class="padding-copy">Distributed via social media, these films ask viewers to fight to reduce gun violence with the most effective tool Americans possess—the ballot box. One video was awarded the top honor for editing at the One Screen Film Festival, sponsored by The One Club. And the campaign has been selected as a finalist at The Creative Floor Healthcare Awards 2015.</td>
+                            </tr>
+                            <tr>
+                                <td style="padding: 0 0 45px 25px;-webkit-text-size-adjust: 100%;-ms-text-size-adjust: 100%;mso-table-lspace: 0pt;mso-table-rspace: 0pt;" align="left" class="padding">
+                                    <table border="0" cellspacing="0" cellpadding="0" class="mobile-button-container" style="-webkit-text-size-adjust: 100%;-ms-text-size-adjust: 100%;mso-table-lspace: 0pt;mso-table-rspace: 0pt;border-collapse: collapse !important;">
+                                        <tr>
+                                            <td align="center" style="-webkit-text-size-adjust: 100%;-ms-text-size-adjust: 100%;mso-table-lspace: 0pt;mso-table-rspace: 0pt;">
+                                                <!-- BULLETPROOF BUTTON -->
+                                                <table width="100%" border="0" cellspacing="0" cellpadding="0" class="mobile-button-container" style="-webkit-text-size-adjust: 100%;-ms-text-size-adjust: 100%;mso-table-lspace: 0pt;mso-table-rspace: 0pt;border-collapse: collapse !important;">
+                                                    <tr>
+                                                        <td align="center" style="padding: 0;-webkit-text-size-adjust: 100%;-ms-text-size-adjust: 100%;mso-table-lspace: 0pt;mso-table-rspace: 0pt;" class="padding-copy">
+                                                            <table border="0" cellspacing="0" cellpadding="0" class="responsive-table" style="-webkit-text-size-adjust: 100%;-ms-text-size-adjust: 100%;mso-table-lspace: 0pt;mso-table-rspace: 0pt;border-collapse: collapse !important;">
+                                                                <tr>
+                                                                    <td align="center" style="-webkit-text-size-adjust: 100%;-ms-text-size-adjust: 100%;mso-table-lspace: 0pt;mso-table-rspace: 0pt;"><a href="#" target="_blank" style="font-size: 15px;font-family: Helvetica, Arial, sans-serif;font-weight: normal;color: #ffffff;text-decoration: none;background-color: #313131;border-top: 10px solid #313131;border-bottom: 10px solid #313131;border-left: 20px solid #313131;border-right: 20px solid #313131;border-radius: 3px;-webkit-border-radius: 3px;-moz-border-radius: 3px;display: inline-block;-webkit-text-size-adjust: 100%;-ms-text-size-adjust: 100%;" class="mobile-button">Learn More &rarr;</a></td>
+                                                                </tr>
+                                                            </table>
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                <tr>
+                    <td valign="top" style="padding: 40px 0 0 0;-webkit-text-size-adjust: 100%;-ms-text-size-adjust: 100%;mso-table-lspace: 0pt;mso-table-rspace: 0pt;" class="mobile-hide"><a href="#" target="_blank" style="-webkit-text-size-adjust: 100%;-ms-text-size-adjust: 100%;"><img src="http://res.cloudinary.com/ldeddydma/image/upload/v1496846738/web_wkiyh6.jpg" alt="Campaign Monitor" width="105" height="105" border="0" style="display: block;font-family: Arial;color: #666666;font-size: 14px;width: 105px;height: 105px;-ms-interpolation-mode: bicubic;border: 0;line-height: 100%;outline: none;text-decoration: none;"></a></td>
+                    <td style="padding: 40px 0 0 0;-webkit-text-size-adjust: 100%;-ms-text-size-adjust: 100%;mso-table-lspace: 0pt;mso-table-rspace: 0pt;" class="no-padding">
+                        <!-- ARTICLE -->
+                        <table border="0" cellspacing="0" cellpadding="0" width="100%" style="-webkit-text-size-adjust: 100%;-ms-text-size-adjust: 100%;mso-table-lspace: 0pt;mso-table-rspace: 0pt;border-collapse: collapse !important;">
+                            <tr>
+                                <td align="left" style="padding: 0 0 5px 25px;font-size: 13px;font-family: Helvetica, Arial, sans-serif;font-weight: normal;color: #aaaaaa;-webkit-text-size-adjust: 100%;-ms-text-size-adjust: 100%;mso-table-lspace: 0pt;mso-table-rspace: 0pt;" class="padding-meta">FRONTLINE plus</td>
+                            </tr>
+                            <tr>
+                                <td align="left" style="padding: 0 0 5px 25px;font-size: 22px;font-family: Helvetica, Arial, sans-serif;font-weight: normal;color: #333333;-webkit-text-size-adjust: 100%;-ms-text-size-adjust: 100%;mso-table-lspace: 0pt;mso-table-rspace: 0pt;" class="padding-copy">Consumer Responsive
+                                Website</td>
+                            </tr>
+                            <tr>
+                                 <td align="left" style="padding: 10px 0 15px 25px;font-size: 16px;line-height: 24px;font-family: Helvetica, Arial, sans-serif;color: #666666;-webkit-text-size-adjust: 100%;-ms-text-size-adjust: 100%;mso-table-lspace: 0pt;mso-table-rspace: 0pt;" class="padding-copy">FRONTLINE Plus helped pet owners learn how to take control of fleas and ticks no matter what device they were using. SSW developed a responsive website that automatically adapted content whether users were on a desktop computer, tablet or mobile device. It's no wonder that the site won a silver statuette from the 2013 W3 Awards.</td>
+                            </tr>
+                            <tr>
+                                <td style="padding: 0 0 45px 25px;-webkit-text-size-adjust: 100%;-ms-text-size-adjust: 100%;mso-table-lspace: 0pt;mso-table-rspace: 0pt;" align="left" class="padding">
+                                    <table border="0" cellspacing="0" cellpadding="0" class="mobile-button-container" style="-webkit-text-size-adjust: 100%;-ms-text-size-adjust: 100%;mso-table-lspace: 0pt;mso-table-rspace: 0pt;border-collapse: collapse !important;">
+                                        <tr>
+                                            <td align="center" style="-webkit-text-size-adjust: 100%;-ms-text-size-adjust: 100%;mso-table-lspace: 0pt;mso-table-rspace: 0pt;">
+                                                <!-- BULLETPROOF BUTTON -->
+                                                <table width="100%" border="0" cellspacing="0" cellpadding="0" class="mobile-button-container" style="-webkit-text-size-adjust: 100%;-ms-text-size-adjust: 100%;mso-table-lspace: 0pt;mso-table-rspace: 0pt;border-collapse: collapse !important;">
+                                                    <tr>
+                                                        <td align="center" style="padding: 0;-webkit-text-size-adjust: 100%;-ms-text-size-adjust: 100%;mso-table-lspace: 0pt;mso-table-rspace: 0pt;" class="padding-copy">
+                                                            <table border="0" cellspacing="0" cellpadding="0" class="responsive-table" style="-webkit-text-size-adjust: 100%;-ms-text-size-adjust: 100%;mso-table-lspace: 0pt;mso-table-rspace: 0pt;border-collapse: collapse !important;">
+                                                                <tr>
+                                                                    <td align="center" style="-webkit-text-size-adjust: 100%;-ms-text-size-adjust: 100%;mso-table-lspace: 0pt;mso-table-rspace: 0pt;"><a href="#" target="_blank" style="font-size: 15px;font-family: Helvetica, Arial, sans-serif;font-weight: normal;color: #ffffff;text-decoration: none;background-color: #313131;border-top: 10px solid #313131;border-bottom: 10px solid #313131;border-left: 20px solid #313131;border-right: 20px solid #313131;border-radius: 3px;-webkit-border-radius: 3px;-moz-border-radius: 3px;display: inline-block;-webkit-text-size-adjust: 100%;-ms-text-size-adjust: 100%;" class="mobile-button">Learn More &rarr;</a></td>
+                                                                </tr>
+                                                            </table>
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+</table>
+
+<!-- FOOTER -->
+
+
+<!-- ONE COLUMN SECTION -->
+<table border="0" cellpadding="0" cellspacing="0" width="100%" style="-webkit-text-size-adjust: 100%;-ms-text-size-adjust: 100%;mso-table-lspace: 0pt;mso-table-rspace: 0pt;border-collapse: collapse !important;">
+    <tr>
+        <td bgcolor="#ffffff" align="center" style="padding: 70px 15px 70px 15px;-webkit-text-size-adjust: 100%;-ms-text-size-adjust: 100%;mso-table-lspace: 0pt;mso-table-rspace: 0pt;" class="section-padding">
+            <table border="0" cellpadding="0" cellspacing="0" width="500" class="responsive-table" style="-webkit-text-size-adjust: 100%;-ms-text-size-adjust: 100%;mso-table-lspace: 0pt;mso-table-rspace: 0pt;border-collapse: collapse !important;">
+                <tr>
+                    <td style="-webkit-text-size-adjust: 100%;-ms-text-size-adjust: 100%;mso-table-lspace: 0pt;mso-table-rspace: 0pt;">
+                        <table width="100%" border="0" cellspacing="0" cellpadding="0" style="-webkit-text-size-adjust: 100%;-ms-text-size-adjust: 100%;mso-table-lspace: 0pt;mso-table-rspace: 0pt;border-collapse: collapse !important;">
+                            <tr>
+                                <td style="-webkit-text-size-adjust: 100%;-ms-text-size-adjust: 100%;mso-table-lspace: 0pt;mso-table-rspace: 0pt;">
+                                                                    </td><td align="center" valign="middle" style="font-size: 12px;line-height: 18px;font-family: Helvetica, Arial, sans-serif;color: #666666;-webkit-text-size-adjust: 100%;-ms-text-size-adjust: 100%;mso-table-lspace: 0pt;mso-table-rspace: 0pt;">
+                                    <span class="appleFooter" style="color:#666666;">&copy; 2017 SAATCHI & SAATCHI WELLNESS. ALL RIGHTS RESERVED. 355 PARK AVE SOUTH, 4TH FLOOR, NEW YORK, NY 10010  </span><br><a class="original-only" style="color: #666666;text-decoration: none;-webkit-text-size-adjust: 100%;-ms-text-size-adjust: 100%;">Unsubscribe</a><span class="original-only" style="font-family: Arial, sans-serif; font-size: 12px; color: #444444;">&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;</span><a style="color: #666666;text-decoration: none;-webkit-text-size-adjust: 100%;-ms-text-size-adjust: 100%;">View this email in your browser</a>
+                                </td>
+                                </tr></table></td>
+                            </tr>
+                            <tr>
+
+
+                        </tr></table>
+                    </td>
+                </tr>
+            </table>
+        
+    
+
+
 </body>
 </html>
